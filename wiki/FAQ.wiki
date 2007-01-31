@@ -1,8 +1,8 @@
-#summary One-sentence summary of this page.
+#Frequently asked questions .
 
 = Introduction =
 
-This is the WebGoat FAQ.
+Before contacting webgoat support at webgoat at g2-inc dot com or posting to the WebGoat mailing list please read the FAQ to see if your question may have been answered.
 
 
 = Details =
