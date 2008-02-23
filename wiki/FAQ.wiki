@@ -1,5 +1,3 @@
-=Frequently Asked Questions=
-
 = Introduction =
 
 Before contacting webgoat support at webgoat at owasp.org or posting to the [http://lists.owasp.org/mailman/listinfo/owasp-webgoat WebGoat mailing list], please read the FAQ to see if your question may have been answered.
@@ -40,7 +38,6 @@ Before contacting webgoat support at webgoat at owasp.org or posting to the [htt
 *A.* WebGoat is a Java application that runs on Tomcat using port 80.  If you have another application listening on port 80 (like IIS), you will need to change WebGoat's port (to 8080 or something) in the tomcat_root/conf/server.xml file.  You can also start up webgoat using the webgoat_8080.bat file.  You will then need to browse to:
     http://localhost:8080/WebGoat/attack
 
-
 *----------------------------------------------------------------------------------------
 
 *Q. When I deploy the war file to the Tomcat wepapps directory, I can't login to WebGoat*
@@ -64,15 +61,14 @@ Before contacting webgoat support at webgoat at owasp.org or posting to the [htt
 
 *Q. How do I get configure WebGoat to run on an IP other then localhost?*
 =  =
-*A.* In the webgoat.bat file, in the root directory, the following lines
-   are executed: 
+*A.* In the webgoat.bat file, in the root directory, the following lines are executed: 
 {{{
       delete .\tomcat\conf\server.xml 
       copy .\tomcat\conf\server_80.xml .\tomcat\conf\server.xml 
 }}}
    This will overwrite any changes you may have made to server.xml file that addressed this issue.... 
 
-   By changing the server_80.xml file (or by removing the above code from webgoat.bat, after making your changes) you can reflect yourchanges to the Tomcat configuration. You will need to change the IP address in the server_80.xml file to be the IP of the host machine.
+   By changing the server_80.xml file (or by removing the above code from webgoat.bat, after making your changes) you can reflect your changes to the Tomcat configuration. You will need to change the IP address in the server_80.xml file to be the IP of the host machine.
 
    The following connectors should be modified
 {{{
@@ -84,7 +80,6 @@ Before contacting webgoat support at webgoat at owasp.org or posting to the [htt
       .... 
 }}}
    where the 127.0.0.1 will be replaced by your IP. In this case 10.20.20.123
-
 
 *----------------------------------------------------------------------------------------
 
