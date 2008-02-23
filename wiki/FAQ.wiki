@@ -1,5 +1,4 @@
-#labels FrequentlyAskedQuestions
-= Introduction =
+#summary Frequently Asked Questions
 
 Before contacting webgoat support at webgoat at owasp.org or posting to the [http://lists.owasp.org/mailman/listinfo/owasp-webgoat WebGoat mailing list], please read the FAQ to see if your question may have been answered.
 =  =
