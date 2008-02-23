@@ -4,6 +4,12 @@ Before contacting webgoat support at webgoat at owasp.org or posting to the [htt
 =  =
 -----------
 =  =
+*Q. How do I report a bug?*
+=  =
+*A.* Add your bug to the [http://code.google.com/p/webgoat/issues/list WebGoat Issues] page.
+
+*----------------------------------------------------------------------------------------
+
 *Q. I put the WebGoat war file in my tomcat/webapps directory and the http://localhost/WebGoat/attack URL doesn't work.*
 =  =
 *A.* Rename the downloaded war file to WebGoat.war.  Delete the existing tomcat/webapps/*WebGoat* directories. Restart Tomcat.
