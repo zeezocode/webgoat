@@ -87,3 +87,9 @@ Before contacting webgoat support at webgoat at owasp.org or posting to the [htt
 =  =
 *A.* Subscribe to the WebGoat mailing list at owasp-webgoat@lists.owasp.org.
    Post your question to owasp-webgoat@lists.owasp.org
+
+*----------------------------------------------------------------------------------------
+
+*Q. How do I report a bug?*
+=  =
+*A.* Add your bug to the [http://code.google.com/p/webgoat/issues/list WebGoat Issues] page.
