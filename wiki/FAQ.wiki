@@ -18,7 +18,7 @@ Before contacting webgoat support at webgoat at owasp.org or posting to the [htt
 
 *Q. I dropped the WebGoat war file into my non-Tomcat application server and WebGoat doesn't seem to work.*
 =  =
-*A.* WebGoat uses Basic Authentication.  The users and roles are defined in tomcat/conf/tomcate-users.xml.  These same users and roles must be added to your application server.
+*A.* WebGoat uses Basic Authentication.  The users and roles are defined in tomcat/conf/tomcat-users.xml.  These same users and roles must be added to your application server.
 
 *----------------------------------------------------------------------------------------
 
