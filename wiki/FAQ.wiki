@@ -3,22 +3,25 @@
 = Introduction =
 
 Before contacting webgoat support at webgoat at owasp.org or posting to the [http://lists.owasp.org/mailman/listinfo/owasp-webgoat WebGoat mailing list], please read the FAQ to see if your question may have been answered.
-
-
-= Details =
-
-*Q.* I put the WebGoat war file in my tomcat/webapps directory and the 
-   http://localhost/WebGoat/attack url doesn't work.
+=  =
+-----------
+=  =
+*Q. I put the WebGoat war file in my tomcat/webapps directory and the http://localhost/WebGoat/attack URL doesn't work.*
+=  =
 *A.* Rename the downloaded war file to WebGoat.war.  Delete the existing tomcat/webapps/*WebGoat* directories. Restart Tomcat.
 
+{{{
+}}}
+*Q. I dropped the WebGoat war file into my non-Tomcat application server and WebGoat doesn't seem to work.*
+=  =
+*A.* WebGoat uses Basic Authentication.  The users and roles are defined in tomcat/conf/tomcate-users.xml.  These same users and roles must be added to your application server.
 
-*Q.* I dropped the WebGoat war file into my non-Tomcat application server and WebGoat doesn't seem to work.
-*A.* WebGoat uses Basic Authentication.  The users and roles are defined in tomcat/conf/tomcate-users.xml.  This same users and roles must be added to your application server.
-
-
-*Q.* Having problems with the ant file working properly. How do I configure my ant environment 
+{{{
+}}}
+*Q. Having problems with the ant file working properly. How do I configure my ant environment 
    so that I don't receive errors such as:
-	- "Specified VM install not found: type Standard VM, name j2sdk1.4.2.06"
+	- "Specified VM install not found: type Standard VM, name j2sdk1.4.2.06"*
+=  =
 *A.* This usually indicates an Eclipse environment setting misconfiguration. Here are some possible solutions:
 	i. Ant Runtime Configuration
 		- Window > Preferences
@@ -29,16 +32,20 @@ Before contacting webgoat support at webgoat at owasp.org or posting to the [htt
 		- Click Apply, Click OK.
 		- Return to the Ant View and refresh.
 
-
-*Q.* When I start up WebGoat it dies very quickly.
+{{{
+}}}
+*Q. When I start up WebGoat it dies very quickly.*
+=  =
 *A.* WebGoat is a Java application that runs on Tomcat using port 80.  If you have another 
    application listening on port 80 (like IIS), you will need to change WebGoat's port 
    (to 8080 or something) in the tomcat_root/conf/server.xml file.
 
-
-*Q.* When I deploy the war file to the Tomcat wepapps directory, I can't login to WebGoat
+{{{
+}}}
+*Q. When I deploy the war file to the Tomcat wepapps directory, I can't login to WebGoat*
+=  =
 *A.* You need to add the webgoat users and roles to tomcat/conf/tomcat-users.xml
-
+{{{
     <?xml version="1.0" encoding="UTF-8"?>
     <tomcat-users>
       <role rolename="webgoat_basic"/>
@@ -50,15 +57,17 @@ Before contacting webgoat support at webgoat at owasp.org or posting to the [htt
       <user password="tomcat" roles="tomcat" username="tomcat"/>
       <user password="guest" roles="webgoat_user" username="guest"/>
     </tomcat-users>
-
-
-*Q.* How do I get configure WebGoat to run on an IP other then localhost?
+}}}
+{{{
+}}}
+*Q. How do I get configure WebGoat to run on an IP other then localhost?*
+=  =
 *A.* In the webgoat.bat file, in the root directory, the following lines
    are executed: 
-
+{{{
       delete .\tomcat\conf\server.xml 
       copy .\tomcat\conf\server_80.xml .\tomcat\conf\server.xml 
-
+}}}
    This will overwrite any changes you may have made to server.xml 
    file that addressed this issue.... 
 
@@ -68,17 +77,19 @@ Before contacting webgoat support at webgoat at owasp.org or posting to the [htt
    address in the server_80.xml file to be the IP of the host machine.
 
    The following connectors should be modified
+{{{
       <!-- Define a non-SSL HTTP/1.1 Connector on port 8080 --> 
       <Connector address="10.20.20.123" port="80" 
       ... 
       <!-- Define a SSL HTTP/1.1 Connector on port 8443 --> 
       <Connector address="10.20.20.123" port="443" 
       .... 
+}}}
+   where the 127.0.0.1 will be replaced by your IP. In this case 10.20.20.123
 
-   where the 127.0.0.1 will be replaced by your IP. In this case
-   10.20.20.123
-
-
-*Q.* How do I solve lesson X?
+{{{
+}}}
+*Q. How do I solve lesson X?*
+=  =
 *A.* Subscribe to the WebGoat mailing list at owasp-webgoat@lists.owasp.org.
    Post your question to owasp-webgoat@lists.owasp.org
