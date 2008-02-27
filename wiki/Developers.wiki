@@ -4,7 +4,7 @@
 
 The following instructions will assist developers with building the WebGoat project as well specifying guidelines for contributing to the source code.
 
-==Java Source Code Formatting:==
+==Java source code formatting:==
 
 WebGoat uses the Eclipse Editor with JavaStyle formatting.  The JavaStyle WebGoat XML file is located at [http://code.google.com/p/webgoat/source/browse/trunk/webgoat/main/project/config/JavaStyle_WebGoat.xml JavaStyle_WebGoat.xml].  
 
