@@ -1,10 +1,16 @@
-#summary Developer Contributions
+#summary Developer Contributions Instructions
 
 = Introduction =
 
-Helping out with WebGoat.
+The following instructions will assist developers with building the WebGoat project as well specifying guidelines for contributing to the source code.
 
 = Java Source Code Formatting =
 
-WebGoat uses the Eclipse Editor with JavaStyle formatting.  The JavaStyle WebGoat XML file is located at [http://code.google.com/p/webgoat/source/browse/trunk/webgoat/main/project/config/JavaStyle_WebGoat.xml JavaStyle_WebGoat.xml]
+WebGoat uses the Eclipse Editor with JavaStyle formatting.  The JavaStyle WebGoat XML file is located at [http://code.google.com/p/webgoat/source/browse/trunk/webgoat/main/project/config/JavaStyle_WebGoat.xml JavaStyle_WebGoat.xml].  
 
+After building your Eclipse Project using the instructions at [http://webgoat.googlecode.com/svn/trunk/webgoat/main/HOW%20TO%20create%20the%20WebGoat%20workspace.txt How to Build Webgoat] 
+  * Right click on the WebGoat Project
+    * Java Code Style -> Formatter
+    * Enable Project Specific Settings
+    * Import -> Browse to config/JavaStyle_WebGoat.xml
+    * OK
