@@ -1,4 +1,4 @@
-#WebGoat Installation Instructions
+# WebGoat Installation Instructions
 = Introduction =
 
 WebGoat installations are intended to be download, unzip, and click-to-run installations.  However, some users prefer just downloading the war file.  Instructions for all installations are included.
