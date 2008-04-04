@@ -1,0 +1,54 @@
+#WebGoat Installation Instructions
+= Introduction =
+
+WebGoat installations are intended to be download, unzip, and click-to-run installations.  However, some users prefer just downloading the war file.  Instructions for all installations are included.
+
+
+= Details =
+
+== WebGoat Standard Releases ==
+
+This release comes with a Java Development Kit and Tomcat 5.5.
+
+  * Download WebGoat-OWASP_Standard-X.X.zip from [http://code.google.com/p/webgoat/downloads/list WebGoat Downloads]
+  * Extract the file to a WebGoat root directory of your choosing
+    * The WebGoat zip file has a WebGoat-X.X root folder
+  * Change directory to WebGoat-X.X directory
+  * Double-click the webgoat.bat file
+    * A Tomcat window will start
+  * Browse to http://localhost/WebGoat/attack
+
+== WebGoat Developer Releases ==
+
+This release comes with a preconfigured Eclipse IDE, Java Development Kit and Tomcat 5.5.
+
+  * Download WebGoat-OWASP_Developer-X.X.zip from [http://sourceforge.net/project/showfiles.php?group_id=64424&package_id=61824 Sourceforge WebGoat Downloads]
+  * Extract the file to a WebGoat root directory of your choosing
+    * The WebGoat zip file has a WebGoat-X.X root folder
+  * Change directory to WebGoat-X.X directory
+  * Extract the Eclipse-Workspace.zip file to the working directory
+  * Double-click the eclipse.bat file
+  * In the Eclipse package explorer (top right), right click the WebGoat project and refresh
+  * In the Eclipse package explorer (top right), right click the Servers project and refresh
+  * In the Eclipse servers view (bottom), right click LocalHost server and start
+  * Browse to http://localhost/WebGoat/attack
+  * Any changes made to the source will automatically compile and redeploy when saved
+
+====This release can also be run by double-clicking the webgoat.bat file ===
+
+
+== WebGoat War File Releases ==
+
+This release assumes either a previous installation of a WebGoat Standard release or the host machine has java 1.5 or higher and tomcat 5.5.  If you have not installed the Standard release, you will need to modify the tomcat/con/tomcat-users.xml file to add the WebGoat users.  Set the [http://code.google.com/p/webgoat/wiki/FAQ FAQ\
+  * Download WebGoat-OWASP_WAR-X.X.zip from [http://code.google.com/p/webgoat/downloads/list WebGoat Downloads]
+  * Shutdown Tomcat if running - just close the tomcat window
+  * Copy the war file to WebGoat-X.X\tomcat\webapps\WebGoat.war
+  * Delete the existing WebGoat-X.X\tomcat\webapps\WebGoat directory
+    * *This will cause all lesson status to be lost*
+    * To save lessons status, copy the webapps\WebGoat\users folder
+    * Restore the users directory *after* you restart WebGoat
+  * Change directory to WebGoat-X.X directory
+  * Double-click the webgoat.bat file
+    * A Tomcat window will start
+  * Browse to http://localhost/WebGoat/attack
+  
