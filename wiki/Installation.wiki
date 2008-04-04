@@ -28,8 +28,8 @@ This release comes with a preconfigured Eclipse IDE, Java Development Kit and To
   * Change directory to WebGoat-X.X directory
   * Extract the Eclipse-Workspace.zip file to the working directory
   * Double-click the eclipse.bat file
-  * In the Eclipse package explorer (top right), right click the WebGoat project and refresh
-  * In the Eclipse package explorer (top right), right click the Servers project and refresh
+  * In the Eclipse package explorer (top left), right click the WebGoat project and refresh
+  * In the Eclipse package explorer (top left), right click the Servers project and refresh
   * In the Eclipse servers view (bottom), right click LocalHost server and start
   * Browse to http://localhost/WebGoat/attack
   * Any changes made to the source will automatically compile and redeploy when saved
