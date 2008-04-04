@@ -39,7 +39,7 @@ This release comes with a preconfigured Eclipse IDE, Java Development Kit and To
 
 == WebGoat War File Releases ==
 
-This release assumes either a previous installation of a WebGoat Standard release or the host machine has java 1.5 or higher and tomcat 5.5.  If you have not installed the Standard release, you will need to modify the tomcat/con/tomcat-users.xml file to add the WebGoat users.  Set the [http://code.google.com/p/webgoat/wiki/FAQ FAQ\
+This release assumes either a previous installation of a WebGoat Standard release or the host machine has java 1.5 or higher and tomcat 5.5.  If you have not installed the Standard release, you will need to modify the tomcat/conf/tomcat-users.xml file to add the WebGoat users.  Set the [http://code.google.com/p/webgoat/wiki/FAQ FAQ\
   * Download WebGoat-OWASP_WAR-X.X.zip from [http://code.google.com/p/webgoat/downloads/list WebGoat Downloads]
   * Shutdown Tomcat if running - just close the tomcat window
   * Copy the war file to WebGoat-X.X\tomcat\webapps\WebGoat.war
