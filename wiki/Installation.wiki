@@ -16,25 +16,12 @@ This release comes with a Java Development Kit and Tomcat 5.5.
   * Change directory to WebGoat-X.X directory
   * Double-click the webgoat.bat file
     * A Tomcat window will start
-  * Browse to http://localhost/WebGoat/attack
+  * Browse to http://localhost/webgoat/attack
+  * Username = guest, password = guest
 
 == WebGoat Developer Releases ==
 
-This release comes with a preconfigured Eclipse IDE, Java Development Kit and Tomcat 5.5.
-
-  * Download WebGoat-OWASP_Developer-X.X.zip from [http://sourceforge.net/project/showfiles.php?group_id=64424&package_id=61824 Sourceforge WebGoat Downloads]
-  * Extract the file to a WebGoat root directory of your choosing
-    * The WebGoat zip file has a WebGoat-X.X root folder
-  * Change directory to WebGoat-X.X directory
-  * Extract the Eclipse-Workspace.zip file to the working directory
-  * Double-click the eclipse.bat file
-  * In the Eclipse package explorer (top left), right click the WebGoat project and refresh
-  * In the Eclipse package explorer (top left), right click the Servers project and refresh
-  * In the Eclipse servers view (bottom), right click LocalHost server and start
-  * Browse to http://localhost/WebGoat/attack
-  * Any changes made to the source will automatically compile and redeploy when saved
-
-====This release can also be run by double-clicking the webgoat.bat file ===
+Version 5.3 uses maven, see the readme for instructions
 
 
 == WebGoat War File Releases ==
