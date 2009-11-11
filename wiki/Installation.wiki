@@ -29,13 +29,13 @@ Version 5.3 uses maven, see the readme for instructions
 This release assumes either a previous installation of a WebGoat Standard release or the host machine has java 1.5 or higher and tomcat 5.5.  If you have not installed the Standard release, you will need to modify the tomcat/conf/tomcat-users.xml file to add the WebGoat users.  Set the [http://code.google.com/p/webgoat/wiki/FAQ FAQ\
   * Download WebGoat-OWASP_WAR-X.X.zip from [http://code.google.com/p/webgoat/downloads/list WebGoat Downloads]
   * Shutdown Tomcat if running - just close the tomcat window
-  * Copy the war file to WebGoat-X.X\tomcat\webapps\WebGoat.war
-  * Delete the existing WebGoat-X.X\tomcat\webapps\WebGoat directory
+  * Copy the war file to WebGoat-X.X\tomcat\webapps\webgoat.war
+  * Delete the existing WebGoat-X.X\tomcat\webapps\webgoat directory
     * *This will cause all lesson status to be lost*
-    * To save lessons status, copy the webapps\WebGoat\users folder
+    * To save lessons status, copy the webapps\webgoat\users folder
     * Restore the users directory *after* you restart WebGoat
   * Change directory to WebGoat-X.X directory
   * Double-click the webgoat.bat file
     * A Tomcat window will start
-  * Browse to http://localhost/WebGoat/attack
+  * Browse to http://localhost/webgoat/attack
   
