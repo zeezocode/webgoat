@@ -26,7 +26,7 @@ Version 5.4 uses maven, see the readme for instructions
 
 == WebGoat War File Releases ==
 
-This release assumes either a previous installation of a WebGoat Standard release or the host machine has Java 1.6 or higher and Tomcat 7.  If you have not installed the Standard release, you will need to modify the tomcat/conf/tomcat-users.xml file to add the WebGoat users.  Set the [http://code.google.com/p/webgoat/wiki/FAQ FAQ\
+This release assumes either a previous installation of a WebGoat Standard release or the host machine has Java 1.6 or higher and Tomcat 7.  If you have not installed the Standard release, you will need to modify the tomcat/conf/tomcat-users.xml file to add the WebGoat users.  See the [http://code.google.com/p/webgoat/wiki/FAQ] FAQ
   * Download WebGoat-OWASP_WAR-X.X.zip from [http://code.google.com/p/webgoat/downloads/list WebGoat Downloads]
   * Shutdown Tomcat if running - just close the tomcat window
   * Copy the war file to WebGoat-X.X\tomcat\webapps\WebGoat.war
