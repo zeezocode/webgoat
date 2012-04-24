@@ -35,7 +35,9 @@ This release assumes either a previous installation of a WebGoat Standard releas
     * To save lessons status, copy the webapps\WebGoat\users folder
     * Restore the users directory *after* you restart WebGoat
   * Change directory to WebGoat-X.X directory
-  * Double-click the webgoat.bat file
+  * Double-click the webgoat.bat for Windows or run ./webgoat.sh start8080 for Ubuntu
     * A Tomcat window will start
-  * Browse to http://localhost/WebGoat/attack
+  * Browse to http://localhost/WebGoat/attack for Windows or http://localhost:8080/WebGoat/attack for Ubuntu
+  * Username = guest, password = guest
+
   
