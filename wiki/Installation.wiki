@@ -10,7 +10,7 @@ WebGoat installations are intended to be download, unzip, and click-to-run insta
 
 This release comes with a JRE and Tomcat 7.
 
-  * Download WebGoat-OWASP_Standard-X.X.zip from [http://code.google.com/p/webgoat/downloads/list WebGoat Downloads]
+  * Download WebGoat-X.X-OWASP_Standard_Win32.zip or WebGoat-X.X-OWASP_Standard_Ubuntu32 from [http://code.google.com/p/webgoat/downloads/list WebGoat Downloads]
   * Extract the file to a WebGoat root directory of your choosing
     * The WebGoat zip file has a WebGoat-X.X root folder
   * Change directory to WebGoat-X.X directory
@@ -27,7 +27,7 @@ Version 5.4 uses maven, see the readme for instructions
 == WebGoat War File Releases ==
 
 This release assumes either a previous installation of a WebGoat Standard release or the host machine has Java 1.6 or higher and Tomcat 7.  If you have not installed the Standard release, you will need to modify the tomcat/conf/tomcat-users.xml file to add the WebGoat users.  See the [http://code.google.com/p/webgoat/wiki/FAQ FAQ]
-  * Download WebGoat-OWASP_WAR-X.X.zip from [http://code.google.com/p/webgoat/downloads/list WebGoat Downloads]
+  * Download WebGoat-X.X.war from [http://code.google.com/p/webgoat/downloads/list WebGoat Downloads]
   * Shutdown Tomcat if running - just close the tomcat window
   * Copy the war file to WebGoat-X.X\tomcat\webapps\WebGoat.war
   * Delete the existing WebGoat-X.X\tomcat\webapps\WebGoat directory
